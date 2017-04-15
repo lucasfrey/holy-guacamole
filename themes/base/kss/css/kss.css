@@ -1,0 +1,59 @@
+/**
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.page-content {
+	margin: 60px 15px;
+}
+
+#kss-maincontent {
+	position: relative;
+	max-width: 960px;
+}
+			
+	#kss-maincontent h1, #kss-maincontent h2, #kss-maincontent h3 {
+		margin-top: 0;
+	}
+	
+	#kss-maincontent button.mdl-button {
+		position: absolute;
+		z-index: 99;
+		top: 8px;
+		right: 8px;
+	}
+
+	#kss-maincontent .mdl-card__supporting-text {
+	  margin: 40px;
+	  -webkit-box-flex: 1;
+	  -webkit-flex-grow: 1;
+	  -ms-flex-positive: 1;
+	  flex-grow: 1;
+	  padding: 0;
+	  color: inherit;
+	  width: calc(100% - 80px);
+	}
+
+
+.mdl-card__supporting-text + .mdl-card__actions {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.mdl-layout-spacer {
+}
+
+.mdl-navigation__link-secondary {
+  padding-left: 60px !important;
+}
+
+

@@ -1,0 +1,62 @@
+@import '../../../css/variables.less';
+
+// Loader
+//
+// Markup: loader.html
+//
+// .loader--small         - Small loader styles.
+//
+// Style guide: components.loader
+
+.loader,
+.loader:after {
+	border-radius: 50%;
+	width: 10em;
+	height: 10em;
+}
+.loader {
+	margin: 60px auto;
+	font-size: 10px;
+	position: relative;
+	text-indent: -9999em;
+	border-top: 1.1em solid rgba(0,188,212, 0.2);
+	border-right: 1.1em solid rgba(0,188,212, 0.2);
+	border-bottom: 1.1em solid rgba(0,188,212, 0.2);
+	border-left: 1.1em solid rgb(0,188,212);
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-animation: load8 1.1s infinite linear;
+	animation: load8 1.1s infinite linear;
+
+	&.loader--small {
+		width: 30px;
+		height: 30px;
+		border-top: 3px solid rgba(0,188,212, 0.2);
+		border-right: 3px solid rgba(0,188,212, 0.2);
+		border-bottom: 3px solid rgba(0,188,212, 0.2);
+		border-left: 3px solid rgb(0,188,212);
+	}
+}
+
+@-webkit-keyframes load8 {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@keyframes load8 {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+

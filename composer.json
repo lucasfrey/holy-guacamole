@@ -1,0 +1,36 @@
+{
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages:satis@packages.heyday.net.nz/"
+        }
+    ],
+
+    "require": {
+        "silverstripe/cms": "@stable",
+        "silverstripe/framework": "@stable",
+
+        "camspiers/autoloader-composer-silverstripe": "@stable",
+        "camspiers/honeypot" : "@stable",
+        "camspiers/silverstripe-loggerbridge": "@stable",
+
+        "heyday/silverstripe-cacheinclude": "@stable",
+        "heyday/silverstripe-hashpath": "@stable",
+        "heyday/silverstripe-optimisedimage": "@stable",
+        "heyday/silverstripe-menumanager": "@stable",
+        "heyday/silverstripe-templatehelpers": "@stable",
+        "heyday/silverstripe-redirects": "@stable",
+        "heyday/silverstripe-analytics": "@stable",
+
+        "unclecheese/betterbuttons": "@stable",
+        "kinglozzer/metatitle": "@stable",
+        "raven/raven": "@stable",
+        "silverstripe/googlesitemaps": "@stable",
+        "littlegiant/silverstripe-catalogmanager": "^4.0",
+        "mobiledetect/mobiledetectlib": "^2.8"
+    },
+
+    "require-dev": {
+        "filp/whoops": "@stable"
+    }
+}

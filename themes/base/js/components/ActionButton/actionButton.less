@@ -1,0 +1,24 @@
+@import '../../../css/variables.less';
+
+// Button
+//
+// Markup: actionButton.html
+//
+// .button--secondary         - Secondary button styles.
+//
+// Style guide: global.button
+
+
+.button {
+	padding: 10px 30px;
+	border-radius: 3px;
+	border: 0;
+	background-color: @color-primary;
+	color: @color-secondary;
+
+	&.button--secondary {
+		background-color: @color-secondary;
+		color: @color-primary;
+		border: 1px solid @color-primary;
+	}
+}

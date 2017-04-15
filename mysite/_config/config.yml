@@ -1,0 +1,35 @@
+---
+Name: mysite
+After: 'framework/*','cms/*'
+---
+
+SSViewer:
+  theme: 'base'
+
+GDBackend:
+  default_quality: 90
+
+ImagickBackend:
+  default_quality: 90
+
+Image:
+  extensions:
+    - ResampleImage
+
+ResampleImage:
+  max_x: 2000
+  max_y: 2000
+
+DateField:
+  default_config:
+    showcalendar: true
+
+DateTimeField:
+  default_config:
+    showcalendar: true
+
+ItemPage:
+  extensions:
+    - CatalogPageExtension
+  parentClass:
+    - 'GalleryPage'

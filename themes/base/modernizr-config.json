@@ -1,0 +1,13 @@
+{
+  "minify": true,
+  "options": [
+    "setClasses"
+  ],
+  "feature-detects": [
+    "test/inputtypes",
+    "test/queryselector",
+    "test/touchevents",
+    "test/forms/validation",
+    "test/storage/sessionstorage"
+  ]
+}

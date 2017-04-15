@@ -1,0 +1,52 @@
+// ==========================================================================
+// Heyday Styles
+// ==========================================================================
+
+// STYLE
+// To make sure our team writes consistent, idiomatic CSS/Less please refer to
+// https://github.com/necolas/idiomatic-css for formatting and style details.
+// Some key points
+// - Use real tabs (configure your editor to "show invisibles").
+// - All code should look like a single person typed it.
+//
+//
+// Modules
+// Key points of the CSS module system
+// - All css should be defined in a css module.
+// - All css modules should use the BEM naming convention.
+// - All css modules should have a comment detailing their usage and provide
+//     an example of the basic HTML structure expected.
+
+// Environment setup
+// ==========================================================================
+@import "~normalize-css/normalize.css"; // Reset styles
+
+// Variable & mixins
+// ==========================================================================
+@import "variables.less";
+@import "core/easing.less";
+@import "core/mixins.less";
+@import "core/helpers.less";
+
+// Bootstrap
+// ==========================================================================
+@import "~bootstrap/less/normalize.less";
+@import "~bootstrap/less/variables.less";
+@import "~bootstrap/less/grid.less";
+@import "~bootstrap/less/mixins.less";
+
+// Core
+// ==========================================================================
+@import "core/layout.less"; // Grid and base layout styles (l)
+@import "core/fonts.less"; // Fonts
+@import "core/typography.less"; // Type styles (type)
+@import "core/helpers.less"; // Helper classes for adaptive grid
+
+// Modules
+// ==========================================================================
+@import "modules/item.less"; // Header styles
+@import "modules/columns.less"; // Header styles
+@import "modules/header.less"; // Header styles
+@import "modules/pagination.less";
+@import "modules/footer.less";
+@import "modules/navigation.less"; // Navigation styles
