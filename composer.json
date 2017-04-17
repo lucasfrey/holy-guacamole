@@ -7,14 +7,13 @@
     ],
 
     "require": {
-        "silverstripe/cms": "@stable",
-        "silverstripe/framework": "@stable",
+        "silverstripe/cms": "3.5.*",
+        "silverstripe/framework": "3.5.*",
 
         "camspiers/autoloader-composer-silverstripe": "@stable",
         "camspiers/honeypot" : "@stable",
         "camspiers/silverstripe-loggerbridge": "@stable",
 
-        "heyday/silverstripe-cacheinclude": "@stable",
         "heyday/silverstripe-hashpath": "@stable",
         "heyday/silverstripe-optimisedimage": "@stable",
         "heyday/silverstripe-menumanager": "@stable",
@@ -22,12 +21,13 @@
         "heyday/silverstripe-redirects": "@stable",
         "heyday/silverstripe-analytics": "@stable",
 
-        "unclecheese/betterbuttons": "@stable",
+        "unclecheese/betterbuttons": "^1.3.11",
         "kinglozzer/metatitle": "@stable",
-        "raven/raven": "@stable",
+        "sentry/sentry": "@stable",
         "silverstripe/googlesitemaps": "@stable",
         "littlegiant/silverstripe-catalogmanager": "^4.0",
-        "mobiledetect/mobiledetectlib": "^2.8"
+        "mobiledetect/mobiledetectlib": "^2.8",
+        "jonom/focuspoint": "^2.4"
     },
 
     "require-dev": {

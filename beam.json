@@ -14,9 +14,9 @@
 			"webroot": ""
 		},
 		"live": {
-			"user": "",
-			"host": "",
-			"webroot": "",
+			"user": "root",
+			"host": "128.199.98.205",
+			"webroot": "/usr/share/nginx/holy",
 			"branch": "remotes/origin/master"
 		}
 	},
