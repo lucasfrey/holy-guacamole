@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d19146ab4721a627e37e1382a5ea3337",
+    "content-hash": "e3109b1123b11f58f14b000306f53991",
     "packages": [
         {
             "name": "camspiers/autoloader-composer-silverstripe",
@@ -292,20 +292,21 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.1.5",
+            "version": "2.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "2abce9d956589122c6443d6265f01cf7e9388e3c"
+                "reference": "f2950be7da8b8d6c4e77821b6c9d486e36cdc4f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/2abce9d956589122c6443d6265f01cf7e9388e3c",
-                "reference": "2abce9d956589122c6443d6265f01cf7e9388e3c",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/f2950be7da8b8d6c4e77821b6c9d486e36cdc4f3",
+                "reference": "f2950be7da8b8d6c4e77821b6c9d486e36cdc4f3",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5.9 || ^7.0"
+                "php": "^5.5.9 || ^7.0",
+                "psr/log": "^1.0.1"
             },
             "require-dev": {
                 "mockery/mockery": "0.9.*",
@@ -348,7 +349,7 @@
                 "whoops",
                 "zf2"
             ],
-            "time": "2016-12-26T16:13:31+00:00"
+            "time": "2017-03-07T09:04:45+00:00"
         },
         {
             "name": "heyday/silverstripe-analytics",
@@ -390,6 +391,56 @@
                 "issues": "http://github.com/heyday/silverstripe-analytics/issues"
             },
             "time": "2016-05-27T00:25:51+00:00"
+        },
+        {
+            "name": "heyday/silverstripe-cacheinclude",
+            "version": "4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/heyday/silverstripe-cacheinclude.git",
+                "reference": "73cbce7f171d9ee3b3983b2a733d28543d50d8c7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/heyday/silverstripe-cacheinclude/zipball/73cbce7f171d9ee3b3983b2a733d28543d50d8c7",
+                "reference": "73cbce7f171d9ee3b3983b2a733d28543d50d8c7",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "doctrine/cache": "~1.3",
+                "php": ">=5.3.2",
+                "psr/log": "~1.0",
+                "symfony/expression-language": "~2.4",
+                "symfony/yaml": "~2.4"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "~1.2",
+                "phpunit/phpunit": "~3.7",
+                "sami/sami": "dev-master",
+                "silverstripe/framework": "~3.1.2",
+                "symfony/class-loader": "~2.2"
+            },
+            "type": "silverstripe-module",
+            "autoload": {
+                "psr-4": {
+                    "Heyday\\CacheInclude\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Stephen Holdaway",
+                    "email": "stephen.holdaway@heyday.co.nz",
+                    "homepage": "https://github.com/stecman/"
+                },
+                {
+                    "name": "Cam Spiers",
+                    "email": "cameron@heyday.co.nz",
+                    "homepage": "https://github.com/camspiers/"
+                }
+            ],
+            "time": "2015-11-17T03:42:25+00:00"
         },
         {
             "name": "heyday/silverstripe-hashpath",
@@ -656,16 +707,16 @@
         },
         {
             "name": "littlegiant/silverstripe-catalogmanager",
-            "version": "4.0.0",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/littlegiant/silverstripe-catalogmanager.git",
-                "reference": "df0fe2d17adaf09c5eba9daa011fafac3186eb8d"
+                "reference": "987842a0bcb6472c6fc2f1a64ba44e82224ee514"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/littlegiant/silverstripe-catalogmanager/zipball/df0fe2d17adaf09c5eba9daa011fafac3186eb8d",
-                "reference": "df0fe2d17adaf09c5eba9daa011fafac3186eb8d",
+                "url": "https://api.github.com/repos/littlegiant/silverstripe-catalogmanager/zipball/987842a0bcb6472c6fc2f1a64ba44e82224ee514",
+                "reference": "987842a0bcb6472c6fc2f1a64ba44e82224ee514",
                 "shasum": ""
             },
             "require": {
@@ -696,7 +747,7 @@
                 }
             ],
             "description": "Catalog Manager provides extension for ModelAdmin editing of SiteTree instances",
-            "time": "2016-07-13T02:12:06+00:00"
+            "time": "2017-04-06T00:22:29+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -752,16 +803,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.22.0",
+            "version": "1.22.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "bad29cb8d18ab0315e6c477751418a82c850d558"
+                "reference": "1e044bc4b34e91743943479f1be7a1d5eb93add0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/bad29cb8d18ab0315e6c477751418a82c850d558",
-                "reference": "bad29cb8d18ab0315e6c477751418a82c850d558",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1e044bc4b34e91743943479f1be7a1d5eb93add0",
+                "reference": "1e044bc4b34e91743943479f1be7a1d5eb93add0",
                 "shasum": ""
             },
             "require": {
@@ -826,7 +877,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2016-11-26T00:15:39+00:00"
+            "time": "2017-03-13T07:08:03+00:00"
         },
         {
             "name": "psr/log",
@@ -877,26 +928,32 @@
         },
         {
             "name": "sentry/sentry",
-            "version": "0.17.0",
+            "version": "1.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getsentry/sentry-php.git",
-                "reference": "7d80a2d8bc9b996b223e118a14fcb08f7642f09c"
+                "reference": "5bee26136ab3fc166334cd972892bf71bd361558"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getsentry/sentry-php/zipball/7d80a2d8bc9b996b223e118a14fcb08f7642f09c",
-                "reference": "7d80a2d8bc9b996b223e118a14fcb08f7642f09c",
+                "url": "https://api.github.com/repos/getsentry/sentry-php/zipball/5bee26136ab3fc166334cd972892bf71bd361558",
+                "reference": "5bee26136ab3fc166334cd972892bf71bd361558",
                 "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
-                "monolog/monolog": "*",
                 "php": ">=5.2.4"
             },
+            "conflict": {
+                "raven/raven": "*"
+            },
             "require-dev": {
-                "fabpot/php-cs-fixer": "^1.8.0",
-                "phpunit/phpunit": "^4.6.6"
+                "friendsofphp/php-cs-fixer": "^1.8.0",
+                "monolog/monolog": "*",
+                "phpunit/phpunit": "^4.8 || ^5.0"
+            },
+            "suggest": {
+                "monolog/monolog": "Automatically capture Monolog events as breadcrumbs"
             },
             "bin": [
                 "bin/sentry"
@@ -904,7 +961,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.17.x-dev"
+                    "dev-master": "1.6.x-dev"
                 }
             },
             "autoload": {
@@ -928,7 +985,7 @@
                 "log",
                 "logging"
             ],
-            "time": "2016-05-10T22:52:19+00:00"
+            "time": "2017-02-03T07:32:53+00:00"
         },
         {
             "name": "silverstripe-australia/gridfieldextensions",
@@ -985,16 +1042,16 @@
         },
         {
             "name": "silverstripe/cms",
-            "version": "3.5.2",
+            "version": "3.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-cms.git",
-                "reference": "ce9b05d21d490e5617ec51ecb00f33be523b0797"
+                "reference": "80099f24b76b4ac36d38477f1ad8230208b031cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/ce9b05d21d490e5617ec51ecb00f33be523b0797",
-                "reference": "ce9b05d21d490e5617ec51ecb00f33be523b0797",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/80099f24b76b4ac36d38477f1ad8230208b031cb",
+                "reference": "80099f24b76b4ac36d38477f1ad8230208b031cb",
                 "shasum": ""
             },
             "require": {
@@ -1007,7 +1064,7 @@
             "type": "silverstripe-module",
             "extra": {
                 "branch-alias": {
-                    "3.x-dev": "3.5.x-dev"
+                    "3.x-dev": "3.6.x-dev"
                 }
             },
             "autoload": {
@@ -1035,20 +1092,20 @@
                 "cms",
                 "silverstripe"
             ],
-            "time": "2017-01-26T21:02:38+00:00"
+            "time": "2017-02-20T17:01:15+00:00"
         },
         {
             "name": "silverstripe/framework",
-            "version": "3.5.2",
+            "version": "3.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "00cdc33845a5137d9f2808bb928fcdb338790d5a"
+                "reference": "a2580456bda9ff513cf80227039fc79405908f3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/00cdc33845a5137d9f2808bb928fcdb338790d5a",
-                "reference": "00cdc33845a5137d9f2808bb928fcdb338790d5a",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/a2580456bda9ff513cf80227039fc79405908f3f",
+                "reference": "a2580456bda9ff513cf80227039fc79405908f3f",
                 "shasum": ""
             },
             "require": {
@@ -1089,7 +1146,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2017-01-31T12:07:13+00:00"
+            "time": "2017-02-20T17:01:16+00:00"
         },
         {
             "name": "silverstripe/googlesitemaps",
@@ -1133,7 +1190,7 @@
         },
         {
             "name": "silverstripe/reports",
-            "version": "3.5.2",
+            "version": "3.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-reports.git",
@@ -1183,7 +1240,7 @@
         },
         {
             "name": "silverstripe/siteconfig",
-            "version": "3.5.2",
+            "version": "3.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-siteconfig.git",
@@ -1267,17 +1324,66 @@
             "time": "2017-02-08T22:28:52+00:00"
         },
         {
-            "name": "symfony/process",
-            "version": "v2.8.17",
+            "name": "symfony/expression-language",
+            "version": "v2.8.19",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/process.git",
-                "reference": "0110ac49348d14eced7d3278ea7485f22196932e"
+                "url": "https://github.com/symfony/expression-language.git",
+                "reference": "269a0a751f07a58b315f74899a253ead71747f06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/0110ac49348d14eced7d3278ea7485f22196932e",
-                "reference": "0110ac49348d14eced7d3278ea7485f22196932e",
+                "url": "https://api.github.com/repos/symfony/expression-language/zipball/269a0a751f07a58b315f74899a253ead71747f06",
+                "reference": "269a0a751f07a58b315f74899a253ead71747f06",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\ExpressionLanguage\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony ExpressionLanguage Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-04-03T23:11:44+00:00"
+        },
+        {
+            "name": "symfony/process",
+            "version": "v2.8.19",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/process.git",
+                "reference": "41336b20b52f5fd5b42a227e394e673c8071118f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/process/zipball/41336b20b52f5fd5b42a227e394e673c8071118f",
+                "reference": "41336b20b52f5fd5b42a227e394e673c8071118f",
                 "shasum": ""
             },
             "require": {
@@ -1313,7 +1419,56 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2017-02-03T12:08:06+00:00"
+            "time": "2017-03-04T12:20:59+00:00"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v2.8.19",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "286d84891690b0e2515874717e49360d1c98a703"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/286d84891690b0e2515874717e49360d1c98a703",
+                "reference": "286d84891690b0e2515874717e49360d1c98a703",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-03-20T09:41:44+00:00"
         },
         {
             "name": "unclecheese/betterbuttons",
@@ -1353,16 +1508,16 @@
         },
         {
             "name": "undefinedoffset/sortablegridfield",
-            "version": "0.6.5",
+            "version": "0.6.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/UndefinedOffset/SortableGridField.git",
-                "reference": "94e916b4d91c7c0672a138a6c0a5e82a17c69f91"
+                "reference": "06517fc3af599c003fa977420900f084dfc0372c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/94e916b4d91c7c0672a138a6c0a5e82a17c69f91",
-                "reference": "94e916b4d91c7c0672a138a6c0a5e82a17c69f91",
+                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/06517fc3af599c003fa977420900f084dfc0372c",
+                "reference": "06517fc3af599c003fa977420900f084dfc0372c",
                 "shasum": ""
             },
             "require": {
@@ -1389,214 +1544,10 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2016-11-24T14:01:29+00:00"
+            "time": "2017-04-13T13:22:49+00:00"
         }
     ],
-    "packages-dev": [
-        {
-            "name": "heyday/silverstripe-cacheinclude",
-            "version": "4.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/heyday/silverstripe-cacheinclude.git",
-                "reference": "73cbce7f171d9ee3b3983b2a733d28543d50d8c7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/heyday/silverstripe-cacheinclude/zipball/73cbce7f171d9ee3b3983b2a733d28543d50d8c7",
-                "reference": "73cbce7f171d9ee3b3983b2a733d28543d50d8c7",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "~1.0",
-                "doctrine/cache": "~1.3",
-                "php": ">=5.3.2",
-                "psr/log": "~1.0",
-                "symfony/expression-language": "~2.4",
-                "symfony/yaml": "~2.4"
-            },
-            "require-dev": {
-                "mikey179/vfsstream": "~1.2",
-                "phpunit/phpunit": "~3.7",
-                "sami/sami": "dev-master",
-                "silverstripe/framework": "~3.1.2",
-                "symfony/class-loader": "~2.2"
-            },
-            "type": "silverstripe-module",
-            "autoload": {
-                "psr-4": {
-                    "Heyday\\CacheInclude\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Stephen Holdaway",
-                    "email": "stephen.holdaway@heyday.co.nz",
-                    "homepage": "https://github.com/stecman/"
-                },
-                {
-                    "name": "Cam Spiers",
-                    "email": "cameron@heyday.co.nz",
-                    "homepage": "https://github.com/camspiers/"
-                }
-            ],
-            "time": "2015-11-17T03:42:25+00:00"
-        },
-        {
-            "name": "raven/raven",
-            "version": "0.15.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/getsentry/raven-php.git",
-                "reference": "d544c531a34a1b0f69271a11a887b775be12b3d2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/getsentry/raven-php/zipball/d544c531a34a1b0f69271a11a887b775be12b3d2",
-                "reference": "d544c531a34a1b0f69271a11a887b775be12b3d2",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "php": ">=5.2.4"
-            },
-            "require-dev": {
-                "fabpot/php-cs-fixer": "^1.8.0",
-                "phpunit/phpunit": "^4.6.6"
-            },
-            "bin": [
-                "bin/raven"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.14.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Raven_": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "David Cramer",
-                    "email": "dcramer@gmail.com"
-                }
-            ],
-            "description": "A PHP client for Sentry (http://getsentry.com)",
-            "homepage": "http://getsentry.com",
-            "keywords": [
-                "log",
-                "logging"
-            ],
-            "abandoned": "sentry/sentry",
-            "time": "2016-04-29T11:50:04+00:00"
-        },
-        {
-            "name": "symfony/expression-language",
-            "version": "v2.8.17",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/expression-language.git",
-                "reference": "44b85c40c4982f45ef88bbde107463e912fb7a04"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/expression-language/zipball/44b85c40c4982f45ef88bbde107463e912fb7a04",
-                "reference": "44b85c40c4982f45ef88bbde107463e912fb7a04",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.9"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.8-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\ExpressionLanguage\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony ExpressionLanguage Component",
-            "homepage": "https://symfony.com",
-            "time": "2017-01-02T20:30:24+00:00"
-        },
-        {
-            "name": "symfony/yaml",
-            "version": "v2.8.17",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/yaml.git",
-                "reference": "322a8c2dfbca15ad6b1b27e182899f98ec0e0153"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/322a8c2dfbca15ad6b1b27e182899f98ec0e0153",
-                "reference": "322a8c2dfbca15ad6b1b27e182899f98ec0e0153",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.9"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.8-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Yaml\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Yaml Component",
-            "homepage": "https://symfony.com",
-            "time": "2017-01-21T16:40:50+00:00"
-        }
-    ],
+    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {

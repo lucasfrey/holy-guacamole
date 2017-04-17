@@ -27,7 +27,8 @@
         "silverstripe/googlesitemaps": "@stable",
         "littlegiant/silverstripe-catalogmanager": "^4.0",
         "mobiledetect/mobiledetectlib": "^2.8",
-        "jonom/focuspoint": "^2.4"
+        "jonom/focuspoint": "^2.4",
+        "heyday/silverstripe-cacheinclude": "^4.1"
     },
 
     "require-dev": {
