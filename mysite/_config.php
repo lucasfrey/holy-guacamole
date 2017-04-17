@@ -8,7 +8,7 @@ if (class_exists('Imagick')) {
 }
 
 // Disable caching in dev mode
-if (Director::isDev()) {
-    $cacheInclude = Injector::inst()->get('CacheInclude');
-    $cacheInclude->setEnabled(false);
-}
+//if (Director::isDev()) {
+//    $cacheInclude = Injector::inst()->get('CacheInclude');
+//    $cacheInclude->setEnabled(false);
+//}
