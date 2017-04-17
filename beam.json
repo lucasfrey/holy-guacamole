@@ -38,14 +38,6 @@
 			"location": "target",
 			"phase": "post",
 			"tag": "cache"
-		},
-		{
-			"command": "curl -s -f --data \"domain=domain.co.nz&name=$(whoami)\" https://api.heyday.net.nz/send/deployment/",
-			"location": "local",
-			"phase": "post",
-			"servers": [
-				"live"
-			]
 		}
 	]
 }
