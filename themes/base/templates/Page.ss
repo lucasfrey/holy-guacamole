@@ -15,7 +15,6 @@
 	<% include Page_Accessibility %>
 	<% include Page_Header %>
 	<main role="main">
-		<h1>test</h1>
 		$Layout
 	</main>
 	<% include Page_Footer %>
