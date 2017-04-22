@@ -4,7 +4,8 @@
 	],
 	"exclude": {
 		"patterns": [
-
+			"silverstripe-redirects/cache",
+			"silverstripe-dataobjectpreview/"
 		]
 	},
 	"servers": {
