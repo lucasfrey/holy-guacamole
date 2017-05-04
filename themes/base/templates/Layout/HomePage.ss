@@ -1,14 +1,14 @@
 <section class="columns">
 	<div class="col-sm-6 column">
 		<% loop $PaginatedItems %>
-			<% if $MultipleOf(2) %>
+			<% if $Odd %>
 				<% include Column_Link isMobile=$Top.isMobile %>
 			<% end_if %>
 		<% end_loop %>
 	</div>
 	<div class="col-sm-6 column">
 		<% loop $PaginatedItems %>
-			<% if $Pos == 1 || $MultipleOf(3) %>
+			<% if $Even %>
 				<% include Column_Link isMobile=$Top.isMobile %>
 			<% end_if %>
 		<% end_loop %>
