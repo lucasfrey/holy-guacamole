@@ -4,8 +4,8 @@ header {
 	.header__title {
 		text-align: left;
 		float: right;
-		font-weight: 100;
-		margin-top: 35px;
+		font-weight: 500;
+		margin-top: 26px;
 		border: 0;
 		.font-size(9, 9);
 
@@ -14,7 +14,7 @@ header {
 		}
 
 		@media @md {
-			.font-size(34, 34);
+			.font-size(20, 29);
 		}
 	}
 
@@ -40,38 +40,13 @@ header {
 
 			&:hover {
 				text-decoration: none;
+				border-bottom: 1px solid @font-color-primary-hover;
 				color: @font-color-primary-hover;
-
-				&:after {
-					transform: translate(0, 0);
-					opacity: 1;
-				}
-			}
-
-			&:after {
-				content: '';
-				position: absolute;
-				width: 40px;
-				right: 0;
-				left: 0;
-				margin: 0 auto;
-				bottom: -5px;
-				height: 2px;
-				background-color: @font-color-primary;
-				.transform(translate(-65%, 0));
-				.transition(all 235ms);
-				opacity: 0;
-				filter: alpha(opacity=0);
 			}
 
 			&.menu__link--current,
 			&.menu__link--section {
 				color: @font-color-primary-hover;
-
-				&:after {
-					transform: translate(0, 0);
-					opacity: 1;
-				}
 			}
 		}
 
