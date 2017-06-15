@@ -21,7 +21,7 @@ let common = {
 		]
 	},
 	output: {
-		path: 'build',
+		path: PATH('./build'),
 		filename: 'bundle-[name].js',
 		sourceMapFilename: '[file].map'
 	},

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e3109b1123b11f58f14b000306f53991",
+    "content-hash": "5e0bac9ab3529b3d52083a45b4e037cc",
     "packages": [
         {
             "name": "camspiers/autoloader-composer-silverstripe",
@@ -1042,16 +1042,16 @@
         },
         {
             "name": "silverstripe/cms",
-            "version": "3.5.3",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-cms.git",
-                "reference": "80099f24b76b4ac36d38477f1ad8230208b031cb"
+                "reference": "08093ea308c13f1f334a01b46d66b720bd86216e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/80099f24b76b4ac36d38477f1ad8230208b031cb",
-                "reference": "80099f24b76b4ac36d38477f1ad8230208b031cb",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/08093ea308c13f1f334a01b46d66b720bd86216e",
+                "reference": "08093ea308c13f1f334a01b46d66b720bd86216e",
                 "shasum": ""
             },
             "require": {
@@ -1092,25 +1092,25 @@
                 "cms",
                 "silverstripe"
             ],
-            "time": "2017-02-20T17:01:15+00:00"
+            "time": "2017-05-30T21:52:22+00:00"
         },
         {
             "name": "silverstripe/framework",
-            "version": "3.5.3",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "a2580456bda9ff513cf80227039fc79405908f3f"
+                "reference": "143c4a63cf1f7cf5697abbe31908e446ed2ecb3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/a2580456bda9ff513cf80227039fc79405908f3f",
-                "reference": "a2580456bda9ff513cf80227039fc79405908f3f",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/143c4a63cf1f7cf5697abbe31908e446ed2ecb3e",
+                "reference": "143c4a63cf1f7cf5697abbe31908e446ed2ecb3e",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "~1.0",
-                "php": ">=5.3.3,<7"
+                "php": ">= 5.3.3, <7.2"
             },
             "require-dev": {
                 "phpunit/phpunit": "~3.7"
@@ -1118,7 +1118,7 @@
             "type": "silverstripe-module",
             "extra": {
                 "branch-alias": {
-                    "3.x-dev": "3.5.x-dev"
+                    "3.x-dev": "3.6.x-dev"
                 }
             },
             "autoload": {
@@ -1146,7 +1146,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2017-02-20T17:01:16+00:00"
+            "time": "2017-05-30T22:11:03+00:00"
         },
         {
             "name": "silverstripe/googlesitemaps",
@@ -1508,16 +1508,16 @@
         },
         {
             "name": "undefinedoffset/sortablegridfield",
-            "version": "0.6.7",
+            "version": "0.6.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/UndefinedOffset/SortableGridField.git",
-                "reference": "06517fc3af599c003fa977420900f084dfc0372c"
+                "reference": "1750b7b45a3b140cbcdac76707c17fc98eb8e99c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/06517fc3af599c003fa977420900f084dfc0372c",
-                "reference": "06517fc3af599c003fa977420900f084dfc0372c",
+                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/1750b7b45a3b140cbcdac76707c17fc98eb8e99c",
+                "reference": "1750b7b45a3b140cbcdac76707c17fc98eb8e99c",
                 "shasum": ""
             },
             "require": {
@@ -1544,7 +1544,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2017-04-13T13:22:49+00:00"
+            "time": "2017-04-21T12:32:43+00:00"
         }
     ],
     "packages-dev": [],
