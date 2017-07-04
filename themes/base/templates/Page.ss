@@ -3,6 +3,7 @@
 <head>
 	<title>$Title | $SiteConfig.Title</title>
 	<% base_tag %>
+	{$AnalyticsCode}
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,7 +12,7 @@
 	<% include Page_Environment %>
 </head>
 <body class="$ClassName.lowerCase">
-	<% include Page_Tag_Manager %>
+	{$TagManagerNoScript}
 	<% include Page_Accessibility %>
 	<% include Page_Header %>
 	<main role="main">

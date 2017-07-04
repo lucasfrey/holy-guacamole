@@ -1,0 +1,8 @@
+Page:
+  extensions:
+    - Heyday\Analytics\AnalyticsExtension
+Injector:
+  AnalyticsService:
+    class: Heyday\Analytics\GoogleTagManagerProvider
+    constructor:
+      0: 'GTM-NRFLN2V'
