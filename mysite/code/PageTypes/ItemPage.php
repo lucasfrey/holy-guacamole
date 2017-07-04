@@ -7,7 +7,8 @@ class ItemPage extends Page
      */
     private static $db = [
         'Title' => 'Varchar(255)',
-        'Content' => 'HTMLText'
+        'Content' => 'HTMLText',
+        'ContentFR' => 'HTMLText'
     ];
 
     /**
@@ -25,6 +26,7 @@ class ItemPage extends Page
         $fields = parent::getCMSFields();
 
         $fields->addFieldToTab('Root.Main', new TextField('Title', 'Title'));
+        $fields->addFieldToTab('Root.French', new TextField('ContentFR', 'ContentFR'));
         $fields->addFieldToTab('Root.Main', new DateField('Created', 'Created'));
         $fields->addFieldToTab('Root.Main', $uploader = UploadField::create('Photo'));
 

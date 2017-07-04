@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5e0bac9ab3529b3d52083a45b4e037cc",
+    "content-hash": "84e24e0c25967771010ebe60a1504cbf",
     "packages": [
         {
             "name": "camspiers/autoloader-composer-silverstripe",
@@ -353,17 +353,17 @@
         },
         {
             "name": "heyday/silverstripe-analytics",
-            "version": "v0.1.2",
+            "version": "0.1.3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:heyday/silverstripe-analytics.git",
-                "reference": "32355daae1444c0213e8295345463fe23e3c9c20"
+                "reference": "acc972cc0a262206e9b454d7c4c3aa59e47edced"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://packages:satis@packages.heyday.net.nz/dist/heyday-silverstripe-analytics-v0.1.2-bbeea2.zip",
-                "reference": "32355daae1444c0213e8295345463fe23e3c9c20",
-                "shasum": "1506ec87d5aab672b3a45c415bc0b805792cfbed"
+                "url": "https://packages:satis@packages.heyday.net.nz/dist/heyday-silverstripe-analytics-0.1.3-fc3f18.zip",
+                "reference": "acc972cc0a262206e9b454d7c4c3aa59e47edced",
+                "shasum": "1c0e4ffcdaf097879b55e503f5ae88cb90c050f9"
             },
             "type": "silverstripe-module",
             "license": [
@@ -390,7 +390,7 @@
             "support": {
                 "issues": "http://github.com/heyday/silverstripe-analytics/issues"
             },
-            "time": "2016-05-27T00:25:51+00:00"
+            "time": "2017-06-15T23:01:43+00:00"
         },
         {
             "name": "heyday/silverstripe-cacheinclude",
@@ -1038,6 +1038,7 @@
                 "gridfield",
                 "silverstripe"
             ],
+            "abandoned": "symbiote/silverstripe-gridfieldextensions",
             "time": "2016-08-19T08:28:30+00:00"
         },
         {
@@ -1559,7 +1560,6 @@
         "heyday/silverstripe-menumanager": 0,
         "heyday/silverstripe-templatehelpers": 0,
         "heyday/silverstripe-redirects": 0,
-        "heyday/silverstripe-analytics": 0,
         "kinglozzer/metatitle": 0,
         "sentry/sentry": 0,
         "silverstripe/googlesitemaps": 0,
