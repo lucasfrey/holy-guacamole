@@ -16,7 +16,7 @@ class Page_Controller extends ContentController
      * Returns a paginated list of all pages in the site.
      */
     public function PaginatedItems() {
-        $list = ItemPage::get();
+        $list = DataObject::get('ItemPage', null, 'created ASC', null, 10);
 
         return new PaginatedList($list, $this->getRequest());
     }
