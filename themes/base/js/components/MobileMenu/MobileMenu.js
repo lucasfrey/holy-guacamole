@@ -77,9 +77,9 @@ class MobileMenu extends Component {
 
 	renderNavToggle() {
 		return (
-			<button onClick={this.handleToggle}>
-				toggle mobile nav
-			</button>
+			<span onClick={this.handleToggle}>
+				x
+			</span>
 		);
 	}
 
