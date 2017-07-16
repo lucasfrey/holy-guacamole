@@ -1,0 +1,41 @@
+@import '../../../css/core/mixins.less';
+@import '../../../css/variables.less';
+
+.translate {
+	.translate__tabs {
+		float: left;
+		margin: 1rem 0;
+
+		.translate__tab {
+			margin-right: 0.5rem;
+			color: @font-color-primary;
+			.transition(color, 250ms);
+
+			&:hover {
+				cursor: pointer;
+				color: @font-color-secondary;
+			}
+		}
+	}
+
+	.translate__holder {
+		position: relative;
+		float:left;
+		width: 100%;
+
+		.translate__content {
+			position: absolute;
+			top: 0;
+			left: -10px;
+			.transition(all, 250ms);
+			opacity: 0;
+			visibility: hidden;
+
+			&.translate__content--active {
+				left: 0;
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}

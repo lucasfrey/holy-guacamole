@@ -1,5 +1,4 @@
 <section class="columns">
-
 	<div class="col-sm-6 column">
 		<% loop $PaginatedItems %>
 			<% if $Odd %>

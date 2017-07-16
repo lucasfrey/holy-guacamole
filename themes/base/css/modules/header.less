@@ -19,10 +19,15 @@ header {
 	}
 
 	.main__menu {
+		display: none;
 		list-style-type: none;
 		float: left;
 		margin: 35px 0 0;
 		padding: 0;
+
+		@media @sm {
+			display: block;
+		}
 
 		.menu__item {
 			display: inline-block;
