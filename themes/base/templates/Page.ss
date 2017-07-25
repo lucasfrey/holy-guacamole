@@ -21,7 +21,10 @@
 	<% include Page_Footer %>
 	<% if isDev %>
 		<script src="{$ThemeDir}/build/bundle-vendor.js"></script>
+		<script src="{$ThemeDir}/build/bundle-index.js"></script>
 	<% end_if %>
-	<script src="{$ThemeDir}/build/bundle-index.js"></script>
+	<% if not isDev %>
+		<script src="$HashPath('build/bundle-index.js')"></script>
+	<% end_if %>
 </body>
 </html>
