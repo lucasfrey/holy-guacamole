@@ -33,3 +33,7 @@ ItemPage:
     - CatalogPageExtension
   parentClass:
     - 'GalleryPage'
+
+SiteTree:
+  extensions:
+    - CommentsExtension
