@@ -2,6 +2,10 @@
 @import '../../../css/variables.less';
 
 .translate {
+	.translate__holder {
+		.transition(all 1s);
+	}
+
 	.translate__tabs {
 		float: left;
 		margin: 1rem 0;
@@ -14,6 +18,11 @@
 			&:hover {
 				cursor: pointer;
 				color: @font-color-secondary;
+			}
+
+			&.translate__tab--active {
+				color: @font-color-secondary;
+				border-bottom: 1px solid @font-color-primary-hover;
 			}
 		}
 	}

@@ -21,14 +21,19 @@ class TranslateTab extends Component {
 
 		this.state = {
 			lang: 'EN'
-		}
+		};
+	}
+
+	componentDidMount() {
+		this.updateHeight();
 	}
 
 	componentDidUpdate() {
 		var allContent = document.querySelectorAll('.translate__content');
 
+		this.updateHeight();
+
 		for (let i = 0; i < allContent.length; i++) {
-			// console.log(allContent[1].classList);
 			allContent[i].classList.remove('translate__content--active');
 		}
 
@@ -41,9 +46,7 @@ class TranslateTab extends Component {
 		return (
 			<div>
 				{this.renderTabs()}
-				<div className="translate__content">
-					{this.renderContent()}
-				</div>
+				{this.renderContent()}
 			</div>
 		);
 	}
@@ -57,19 +60,31 @@ class TranslateTab extends Component {
 	}
 
 	renderTabs() {
-		let tabClasses = "translate__tab";
 		return (
 			<span className="translate__tabs">
-				<a className="translate__tab" onClick={this.handleChangeLanguage.bind(this, 'EN')}>EN</a>
-				<a className="translate__tab" onClick={this.handleChangeLanguage.bind(this, 'FR')}>FR</a>
+				{this.renderTab('EN')}
+				{this.renderTab('FR')}
 			</span>
+		);
+	}
+
+	renderTab(lang) {
+		let tabClasses = lang === this.state.lang ? 'translate__tab translate__tab--active' : 'translate__tab';
+
+		return (
+			<a className={tabClasses} onClick={this.handleChangeLanguage.bind(this, lang)}>{lang}</a>
 		);
 	}
 
 	handleChangeLanguage = (lang) => {
 		this.setState({
 			lang: lang
-		})
+		});
+	}
+
+	updateHeight() {
+		let height = document.querySelector('.lang-' + this.state.lang).offsetHeight + 45;
+		document.querySelector('.translate__holder').style.height = height + 'px';
 	}
 }
 
