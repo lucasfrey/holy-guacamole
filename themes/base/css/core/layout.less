@@ -19,14 +19,6 @@ main {
 	clear: both;
 }
 
-header {
-	height: 100px;
-
-	@media @sm {
-		height: 170px;
-	}
-}
-
 // Max width/responsive images
 // ==========================================================================
 img {
@@ -41,8 +33,10 @@ img {
 
 .container {
 	width: 100%;
+	max-width: 1200px;
 	padding-left: 10px;
 	padding-right: 10px;
+	margin: 0 auto;
 
 	@media @lg {
 		padding-left: 50px;

@@ -60,6 +60,10 @@ class TranslateTab extends Component {
 	}
 
 	renderTabs() {
+		if (!this.isMultiLang()) {
+			return null;
+		}
+
 		return (
 			<span className="translate__tabs">
 				{this.renderTab('EN')}
@@ -80,6 +84,10 @@ class TranslateTab extends Component {
 		this.setState({
 			lang: lang
 		});
+	}
+
+	isMultiLang() {
+		return document.querySelector('.lang-FR');
 	}
 
 	updateHeight() {

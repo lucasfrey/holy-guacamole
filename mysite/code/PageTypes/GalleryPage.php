@@ -23,7 +23,7 @@ class GalleryPage_Controller extends Page_Controller
      * Returns a paginated list of all pages in the site.
      */
     public function PaginatedItems() {
-        $list = DataObject::get('ItemPage', 'ParentID = ' . $this->curr()->ID, 'created ASC', null, null);
+        $list = DataObject::get('ItemPage', 'ParentID = ' . $this->curr()->ID, 'created DESC', null, null);
 
         return new PaginatedList($list, $this->getRequest());
     }
