@@ -83,6 +83,7 @@ switch (process.env.npm_lifecycle_event) {
 					{
 						test: /\.js$|\.json$|\.jsx$/,
 						enforce: 'pre',
+						loader: 'eslint-loader',
 						include: PATH('js'),
 						exclude: [/node_modules/, PATH('js/head')]
 					}
