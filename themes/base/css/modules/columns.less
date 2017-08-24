@@ -11,6 +11,7 @@
 		margin: 4px 2px;
 		border-bottom: 0;
 		overflow: hidden;
+		cursor: pointer;
 
 		.column__image {
 			.transition(all 250ms);
@@ -54,34 +55,52 @@
 	}
 }
 
-img {
+a.primary {
+	width: 100vw;
+	left: 50%;
+	margin-left: -50vw;
+}
+
+a.full {
+	clear: both;
+	width: 100%;
+	box-shadow: 0 3px 4px #000;
+}
+
+a.boxout2 {
+	float: right;
+	margin: 1em -4em 0 1em;
+}
+
+/* progressive image CSS */
+a.progressive {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	outline: none;
+}
+
+a.progressive img {
 	display: block;
 	width: 100%;
+	max-width: none;
+	height: auto;
+	border: 0 none;
 }
 
-.placeholder {
-	background-color: #f6f6f6;
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: relative;
-	overflow: hidden;
+a.progressive img.preview {
+	filter: blur(2vw);
 }
 
-.placeholder img {
+a.progressive img.reveal {
 	position: absolute;
-	opacity: 0;
-	top: 0;
 	left: 0;
-	width: 100%;
-	transition: opacity 1s linear;
+	top: 0;
+	will-change: transform, opacity;
+	animation: reveal 1s ease-out;
 }
 
-.placeholder img.loaded {
-	opacity: 1;
-}
-
-.img-small {
-	filter: blur(50px);
-	/* this is needed so Safari keeps sharp edges */
-	transform: scale(1);
+@keyframes reveal {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
 }
