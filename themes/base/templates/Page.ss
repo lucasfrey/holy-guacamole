@@ -13,12 +13,16 @@
 </head>
 <body class="$ClassName.lowerCase">
 	{$TagManagerNoScript}
+
 	<% include Page_Accessibility %>
 	<% include Page_Header %>
+
 	<main role="main">
 		$Layout
 	</main>
+
 	<% include Page_Footer %>
+
 	<% if isDev %>
 		<script src="{$ThemeDir}/build/bundle-vendor.js"></script>
 		<script src="{$ThemeDir}/build/bundle-index.js"></script>

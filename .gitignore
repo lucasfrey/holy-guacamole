@@ -10,6 +10,7 @@
 !/mysite/
 !/docs
 !/themes/
+/themes/base/guest
 !/maintenance
 !/assets/
 /assets/*

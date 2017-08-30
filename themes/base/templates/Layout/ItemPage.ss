@@ -1,9 +1,9 @@
-<div class="item">
+<div class="container item">
 	<div class="item__description col-xs-12 col-sm-4 col-md-5">
 		<h1>$Title</h1>
 		<p class="item__created">$Created.format('d M Y')</p>
 
-		<div class="translate <% if $ContentFR %>js-translate-tabs<% end_if %>">
+		<div class="translate js-translate-tabs">
 			<div class="translate__holder">
 				<div class="lang-EN translate__content translate__content--active">
 					$Content
