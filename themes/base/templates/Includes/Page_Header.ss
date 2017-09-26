@@ -8,6 +8,8 @@
 				</li>
 			<% end_loop %>
 		</ul>
-		<div data-mobile-menu></div>
+		<div class="mobilemenu__toggle js-mobile-menu">
+			X
+		</div>
 	</div>
 </header>
