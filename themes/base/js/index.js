@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', function() {
 	if (mobileMenu && isMobile) {
 		mobileMenu.addEventListener('click', function(e) {
 			document.querySelector('.main__menu').classList.toggle('main__menu--show');
-		})
+		});
 	}
 
 	let translateTabs = document.querySelector('.js-translate-tabs');
