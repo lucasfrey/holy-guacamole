@@ -14,10 +14,10 @@
 <meta property="og:type" content="article" />
 <meta property="og:title" content="$Title" />
 <meta property="og:description" content="$MetaDescription" />
-<meta property="og:image" content="$Image.URL" />
+<meta property="og:image" content="<% if $Photo %>$Photo.URL<% else %>$Image.URL<% end_if %>" />
 <!-- Twitter meta-tags -->
 <meta name="twitter:card" content="summary" /> <!-- summary, photo or video -->
 <meta name="twitter:url" content="$Link" />
 <meta name="twitter:title" content="$Title" />
 <meta name="twitter:description" content="$MetaDescription" />
-<meta name="twitter:image" content="$Image.URL" />
+<meta name="twitter:image" content="<% if $Photo %>$Photo.URL<% else %>$Image.URL<% end_if %>" />
