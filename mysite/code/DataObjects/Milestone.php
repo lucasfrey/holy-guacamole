@@ -18,6 +18,7 @@ class Milestone extends DataObject
      * @var array
      */
     private static $summary_fields = [
+        'Date' => 'Date',
         'Title' => 'Title',
         'Image.CMSThumbnail' => 'Image'
     ];
@@ -67,6 +68,6 @@ class Milestone extends DataObject
      */
     public function getCMSValidator()
     {
-        return new RequiredFields('Title', 'Image');
+        return new RequiredFields('Title');
     }
 }
